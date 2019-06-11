@@ -1,0 +1,6 @@
+---
+- hosts: node1.example.com
+  tasks:
+  
+    - name: "SETUP IMAGEBUILDER: yum installs"
+      yum: name=lorax-composer,composer-cli,cockpit-composer state=installed
