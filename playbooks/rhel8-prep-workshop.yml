@@ -50,5 +50,6 @@
 - import_playbook: rhel8-setup-webconsole.yml
 - import_playbook: rhel8-setup-podman.yml
 - import_playbook: rhel8-setup-buildah.yml
+- import_playbook: rhel8-setup-imagebuilder.yml
 - import_playbook: rhel8-setup-stratis.yml
 - import_playbook: rhel8-setup-tlog.yml
