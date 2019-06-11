@@ -10,6 +10,8 @@ endif::[]
 
 = Image Builder
 
+WARNING: Image Builder is considered *Technology Preview* and is not intended for production use.  For information on Red Hat scope of support for Technology Preview features, see: link:https://access.redhat.com/support/offerings/techpreview/[Technology Preview Features Support Scope]
+
 Provide Image Builder Summary here
 
 [discrete]
