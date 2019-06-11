@@ -13,7 +13,7 @@ endif::[]
 Provide Image Builder Summary here
 
 [discrete]
-===Current State
+=== Current State
 
 [discrete]
 === Futures
