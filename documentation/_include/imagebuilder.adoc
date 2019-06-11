@@ -18,6 +18,42 @@ Provide Image Builder Summary here
 [discrete]
 === Futures
 
+== Getting Started
+
+Starting on the host *workstation.example.com*, let's ssh over to *node1.example.com*.  No password should be required.
+
+.[root@workstation]#
+----
+ssh node1.example.com
+----
+
+Verify that you are on the right host for these exercises.
+
+.[root@node1]#
+----
+cheat-imagebuilder-checkhost.sh
+----
+
+Now you are ready to begin
+
+== Installation & Configuration
+
+=== Packages and Services
+
+
+[NOTE]
+====
+_Native command(s) to enable firewalld_
+----
+systemctl stop IMAGEBUILDER
+systemctl disable IMAGEBUILDER
+yum install IMAGEBUILDER
+systemctl enable --now IMAGEBUILDER
+systemctl status -l IMAGEBUILDER
+----
+====
+
+
 
 == Building RHEL 8 Image for Azure
 
