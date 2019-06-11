@@ -40,18 +40,35 @@ Now you are ready to begin
 
 == Installation & Configuration
 
+
+
+
 === Packages and Services
+
+.[root@node1]#
+----
+yum install -y lorax-composer composer-cli cockpit-composer
+----
+
+.[root@node1]#
+----
+firewall-cmd --add-service=cockpit && firewall-cmd --add-service=cockpit --permanent
+systemctl enable lorax-composer.socket
+systemctl enable cockpit.socket
+systemctl start lorax-composer
+systemctl start cockpit
+----
 
 
 [NOTE]
 ====
-_Native command(s) to enable firewalld_
+_Native command(s) to enable Image Builder_
 ----
-systemctl stop IMAGEBUILDER
-systemctl disable IMAGEBUILDER
-yum install IMAGEBUILDER
-systemctl enable --now IMAGEBUILDER
-systemctl status -l IMAGEBUILDER
+firewall-cmd --add-service=cockpit && firewall-cmd --add-service=cockpit --permanent
+systemctl enable lorax-composer.socket
+systemctl enable cockpit.socket
+systemctl start lorax-composer
+systemctl start cockpit
 ----
 ====
 
