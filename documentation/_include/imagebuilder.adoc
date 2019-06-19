@@ -22,16 +22,11 @@ Provide Image Builder Summary here
 
 == Getting Started
 
-Starting on the host *workstation.example.com*, let's ssh over to *node1.example.com*.  No password should be required.
-
-.[root@workstation]#
-----
-ssh node1.example.com
-----
+These exercises will be performed on the host *workstation.example.com*.
 
 Verify that you are on the right host for these exercises.
 
-.[root@node1]#
+.[root@workstation]#
 ----
 cheat-imagebuilder-checkhost.sh
 ----
@@ -45,12 +40,12 @@ Now you are ready to begin
 
 === Packages and Services
 
-.[root@node1]#
+.[root@workstation]#
 ----
 yum install -y lorax-composer composer-cli cockpit-composer
 ----
 
-.[root@node1]#
+.[root@workstation]#
 ----
 firewall-cmd --add-service=cockpit && firewall-cmd --add-service=cockpit --permanent
 systemctl enable lorax-composer.socket
@@ -80,7 +75,7 @@ Some instrcutional text
 
 .[root@workstation]#
 ----
-ssh node1.example.com
+
 ----
 
 Describe the expected output if necessary
@@ -91,15 +86,11 @@ Describe the expected output if necessary
 Output from previous command
 ----
 
-== TASK 2
-
-== TASK 3
-
 == Additional Resources
 
 Red Hat Documentation
 
-    * link:https://https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8-beta/html/installing_identity_management_and_access_control/deploying-session-recording[Deplying Session Recording on Red Hat Enterprise Linux]
+    * link:https://https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8-beta/html/installing_identity_management_and_access_control/deploying-session-recording[Deploying Session Recording on Red Hat Enterprise Linux]
 
 [discrete]
 == End of Unit
