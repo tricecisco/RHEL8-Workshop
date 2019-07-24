@@ -90,7 +90,8 @@ Output from previous command
 
 Red Hat Documentation
 
-    * link:https://https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8-beta/html/installing_identity_management_and_access_control/deploying-session-recording[Deploying Session Recording on Red Hat Enterprise Linux]
+    * link:https://developers.redhat.com/blog/2019/05/08/red-hat-enterprise-linux-8-image-builder-building-custom-system-images/[Red Hat Enterprise Linux 8 Image Builder: Building custom system images]
+
 
 [discrete]
 == End of Unit
